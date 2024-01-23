@@ -22,7 +22,7 @@
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
     "start": "astro dev",
-    "build": "astro check && astro build --force",
+    "build": "astro build",
     "sync": "astro sync",
     "preview": "astro preview",
     "postbuild": "pagefind --site dist",
@@ -33,6 +33,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@astrojs/check": "^0.4.1",
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "3.0.0",
     "@types/react": "^18.0.21",
